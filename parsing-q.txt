@@ -1,3 +1,13 @@
 1. How can I loop the script to search all dates?
-2. How can I RegEx to grab only the song title, artist name, and album title?
+
+  -- Currently only able to use a hard-coded date.
+  
+2. How can I RegEx to grab only the date, artist name, song title, and album title?
+
+  -- Song links have the following structure:
+    -- /utils/playlist/accordionplaylistfdatavjoom.php?q=Artist+Artist^Song+Song+Song^Album+Album^260
+    -- Carets delimit the artist, song and album info.
+    
 3. How/where do I store this data?
+
+  -- bucket.jpg?
