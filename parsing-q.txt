@@ -2,12 +2,17 @@
 
   -- Currently only able to use a hard-coded date.
   
-2. How can I RegEx to grab only the date, artist name, song title, and album title?
+2. How can I RegEx to grab only the date, air time, artist name, song title, and album title?
 
   -- Song links have the following structure:
     -- /utils/playlist/accordionplaylistfdatavjoom.php?q=Artist+Artist^Song+Song+Song^Album+Album^260
     -- Carets delimit the artist, song and album info.
     
-3. How/where do I store this data?
+3. How can I format the parsed data to a schema?
+  -- Date, air time, artist name, song title, album title.
 
-  -- bucket.jpg?
+4. Where will I store this data?
+
+
+5. What features would I want to build upon this dataset?
+  -- Search
