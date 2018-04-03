@@ -2,7 +2,7 @@
 
   -- Currently only able to use a hard-coded date.
   
-2. How can I RegEx to grab only the date, air time, artist name, song title, and album title?
+2. How can I .split() to grab only the date, air time, artist name, song title, and album title?
 
   -- Song links have the following structure:
     ** /utils/playlist/accordionplaylistfdatavjoom.php?q=Artist+Artist^Song+Song+Song^Album+Album^260
@@ -15,7 +15,3 @@
 4. Where will I store this data?
 
   -- A mop bucket
-
-5. What features would I want to build upon this dataset?
-
-  -- Search
