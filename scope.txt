@@ -1,0 +1,9 @@
+1. Parse the data and create a schema for it.
+    -- Historical parse.
+    -- Daily parse.
+
+2. Export the data to a DB.
+
+3. Build search funciontality on top of it.
+
+4. Return results with fun metrics. 
