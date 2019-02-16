@@ -1,12 +1,11 @@
 import requests
 from bs4 import BeautifulSoup
-import re
 
 tracklist = []
-playlistdate = '12-09-2018'
+daterange = ['12-04-2018','12-05-2018','12-06-2018']
 
 # Returns songs for a given date.
-def get_text(playlistdate):
+def get_day(playlistdate):
     url = requests.post('http://xpn.org/playlists/xpn-playlist', data = {'playlistdate': playlistdate})
     soup = BeautifulSoup(url.text, 'html.parser')
     songtext = soup.find(id= 'accordion').find_all('a', href=True)
@@ -20,5 +19,10 @@ def get_text(playlistdate):
             artist_and_song = track[-1].split(' - ')
             final = date + time + artist_and_song
             tracklist.append(final)
+
+def get_week():
+    for date in daterange:
+        get_day(date)
     print(tracklist)
-get_text('12-09-2018')
+    
+get_week()
